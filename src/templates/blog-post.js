@@ -10,7 +10,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   console.log(data.site.siteMetadata.image)
-  const style = (post.frontmatter.image) ? {backgroundImage: `url(${post.frontmatter.image})`} : {}
+  const style = post.frontmatter.image
+    ? { backgroundImage: `url(${post.frontmatter.image})` }
+    : {}
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -23,13 +25,18 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header className={`story-header ${(post.frontmatter.image) && `header-img`}`} style={style}>
+        <header
+          className={`story-header ${post.frontmatter.image} style={style}`}
+        >
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <div class="published"><time>{post.frontmatter.date}</time></div>
-          {
-            post.frontmatter.updated && 
-              <div class="published"><time>Last Updated: {post.frontmatter.updated}</time></div>
-          }
+          <div class="published">
+            <time>{post.frontmatter.date}</time>
+          </div>
+          {post.frontmatter.updated && (
+            <div class="published">
+              <time>Last Updated: {post.frontmatter.updated}</time>
+            </div>
+          )}
         </header>
 
         <section

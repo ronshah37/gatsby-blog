@@ -405,7 +405,7 @@ button.action:hover {
 
 .logo a {
   display: block;
-  font: 800 3em "Open Sans", Helvetica, sans-serif;
+  font: 800 3em  "Open Sans", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.1em;
   line-height: 0.45;

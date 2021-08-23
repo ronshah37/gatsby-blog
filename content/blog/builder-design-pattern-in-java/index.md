@@ -2,7 +2,7 @@
 title: Builder Design Pattern in Java
 date: "2021-08-16T11:26:37.121Z"
 updated: "2021-08-16T11:26:37.121Z"
-image: ""
+image: "https://i2.wp.com/blog.knoldus.com/wp-content/uploads/2020/06/download-1.png?fit=292%2C173&ssl=1"
 ---
 
 ![alt text](https://i2.wp.com/blog.knoldus.com/wp-content/uploads/2020/06/download-1.png?fit=292%2C173&ssl=1 "Builder Design Pattern")
